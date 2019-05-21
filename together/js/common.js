@@ -1,8 +1,8 @@
 //Preloader
-/*$(window).on('load', function () {
+$(window).on('load', function () {
     const $preloader = $('#preload');
     $preloader.delay(600).fadeOut('slow');
-});*/
+});
 //Preloader end
 
 onload = function () {
