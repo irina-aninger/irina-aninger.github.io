@@ -62,7 +62,11 @@ header {
   width: 100%;
   padding: 3px 0;
   top: 0;
-  z-index: 100; }
+  z-index: 100;
+  position: fixed; }
+
+#banner {
+  height: 100vh; }
 
 .open-header {
   position: fixed;

@@ -1,18 +1,11 @@
-//Preloader
-$(window).on('load', function () {
-    const $preloader = $('#preload');
-    $preloader.delay(600).fadeOut('slow');
-});
-//Preloader end
-
 onload = function () {
     const div = document.getElementById("banner");
     const header = document.getElementById("header");
-    div.style.height = window.innerHeight - header.offsetHeight + "px";
+    //div.style.height = window.innerHeight - header.offsetHeight + "px";
 
-    onresize = function () {
-        div.style.height = window.innerHeight - header.offsetHeight + "px";
-    };
+    //onresize = function () {
+        //div.style.height = window.innerHeight - header.offsetHeight + "px";
+    //};
 };
 
 $(document).ready(function () {
