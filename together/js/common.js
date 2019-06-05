@@ -41,7 +41,7 @@ $(document).ready(function () {
                 $(this).removeClass('close');
                 $('body').animate({
                     right: '0'
-                }, 200);
+                }, 100);
             } else {
                 $('.mobile-menu').addClass('close');
                 $('header nav').addClass('open-header');
@@ -50,7 +50,7 @@ $(document).ready(function () {
                 }, 350);
                 $('body').animate({
                     right: '180px'
-                }, 200);
+                }, 100);
             }
         });
     };
