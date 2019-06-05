@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     const mobileMenu = function () {
 
-        $('.mobile-menu').on("click", function () {
+        $('.mobile-menu').click(function() {
             if ($(this).hasClass('close')) {
                 $('header nav').animate({
                     transform: 'translateX(1000%)'
