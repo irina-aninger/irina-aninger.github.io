@@ -24,9 +24,15 @@ $(document).ready(function () {
 
     $('a[href^="#"]').on("click", function (e) {
         const anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top - header.offsetHeight
-        }, 800);
+        if ($(window).width() > 991) {
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top - header.offsetHeight
+            }, 800);
+        } else {
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 800);
+        }
         e.preventDefault();
         return false;
     });
