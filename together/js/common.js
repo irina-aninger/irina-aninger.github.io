@@ -36,20 +36,20 @@ $(document).ready(function () {
         $('.mobile-menu').on("click", function () {
             if ($(this).hasClass('close')) {
                 $('header nav').animate({
-                    right: '-180px'
+                    transform: 'translateX(-180px)'
                 }, 350);
                 $(this).removeClass('close');
                 $('body').animate({
-                    right: '0'
-                }, 100);
+                    transform: 'translateX(0px)'
+                }, 350);
             } else {
                 $('.mobile-menu').addClass('close');
                 $('header nav').addClass('open-header');
                 $('header nav').animate({
-                    right: '0'
+                    transform: 'translateX(0px)'
                 }, 350);
                 $('body').animate({
-                    right: '180px'
+                    transform: 'translateX(180px)'
                 }, 350);
             }
         });
