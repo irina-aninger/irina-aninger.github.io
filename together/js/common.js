@@ -36,7 +36,7 @@ $(document).ready(function () {
         $('.mobile-menu').on("click", function () {
             if ($(this).hasClass('close')) {
                 $('header nav').animate({
-                    transform: 'translateX(-180px)'
+                    transform: 'translateX(0%)'
                 }, 350);
                 $(this).removeClass('close');
                 $('body').animate({
