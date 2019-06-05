@@ -37,20 +37,20 @@ $(document).ready(function () {
             if ($(this).hasClass('close')) {
                 $('header nav').animate({
                     right: '-180px'
-                }, 300);
+                }, 350);
                 $(this).removeClass('close');
                 $('body').animate({
                     right: '0'
-                }, 300);
+                }, 200);
             } else {
                 $('.mobile-menu').addClass('close');
                 $('header nav').addClass('open-header');
                 $('header nav').animate({
                     right: '0'
-                }, 300);
+                }, 350);
                 $('body').animate({
                     right: '180px'
-                }, 300);
+                }, 200);
             }
         });
     };
