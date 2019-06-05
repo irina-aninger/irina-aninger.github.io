@@ -50,7 +50,7 @@ $(document).ready(function () {
                 }, 350);
                 $('body').animate({
                     right: '180px'
-                }, 100);
+                }, 350);
             }
         });
     };
