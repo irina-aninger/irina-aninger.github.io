@@ -36,11 +36,11 @@ $(document).ready(function () {
         $('.mobile-menu').on("click", function () {
             if ($(this).hasClass('close')) {
                 $('header nav').animate({
-                    transform: 'translateX(0%)'
+                    transform: 'translateX(1000%)'
                 }, 350);
                 $(this).removeClass('close');
                 $('body').animate({
-                    transform: 'translateX(0px)'
+                    right: '0px'
                 }, 350);
             } else {
                 $('.mobile-menu').addClass('close');
