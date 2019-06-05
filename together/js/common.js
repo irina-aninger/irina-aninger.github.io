@@ -31,15 +31,6 @@ $(document).ready(function () {
         return false;
     });
 
-    $(window).scroll(function () {
-        const height = $(window).scrollTop();
-        if (height > 1) {
-            $('header').addClass('header-fixed');
-        } else {
-            $('header').removeClass('header-fixed');
-        }
-    });
-
     const mobileMenu = function () {
 
         $('.mobile-menu').click(function () {
