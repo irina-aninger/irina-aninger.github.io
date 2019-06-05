@@ -46,10 +46,10 @@ $(document).ready(function () {
                 $('.mobile-menu').addClass('close');
                 $('header nav').addClass('open-header');
                 $('header nav').animate({
-                    transform: 'translateX(0px)'
+                    transform: 'translateX(100%)'
                 }, 350);
                 $('body').animate({
-                    transform: 'translateX(180px)'
+                    transform: 'translateX(-25%)'
                 }, 350);
             }
         });
