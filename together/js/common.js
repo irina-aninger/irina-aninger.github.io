@@ -33,24 +33,24 @@ $(document).ready(function () {
 
     const mobileMenu = function () {
 
-        $('.mobile-menu').click(function () {
+        $('.mobile-menu').on("click", function () {
             if ($(this).hasClass('close')) {
                 $('header nav').animate({
                     right: '-180px'
-                }, 350);
+                }, 300);
                 $(this).removeClass('close');
                 $('body').animate({
-                    right: '0px'
-                }, 350);
+                    right: '0'
+                }, 300);
             } else {
                 $('.mobile-menu').addClass('close');
                 $('header nav').addClass('open-header');
                 $('header nav').animate({
-                    right: '0px'
-                }, 350);
+                    right: '0'
+                }, 300);
                 $('body').animate({
                     right: '180px'
-                }, 350);
+                }, 300);
             }
         });
     };
