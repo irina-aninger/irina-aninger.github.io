@@ -1,13 +1,3 @@
-onload = function () {
-    const div = document.getElementById("banner");
-    const header = document.getElementById("header");
-    //div.style.height = window.innerHeight - header.offsetHeight + "px";
-
-    //onresize = function () {
-        //div.style.height = window.innerHeight - header.offsetHeight + "px";
-    //};
-};
-
 $(document).ready(function () {
     $('#gallery').slick({
         slidesToShow: 3,
@@ -45,10 +35,8 @@ $(document).ready(function () {
         const height = $(window).scrollTop();
         if (height > 1) {
             $('header').addClass('header-fixed');
-            $('#banner').css('marginTop', header.offsetHeight)
         } else {
             $('header').removeClass('header-fixed');
-            $('#banner').css('marginTop', '0')
         }
     });
 
