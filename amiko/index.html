@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Амико</title>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="top__adress">
+        <div class="container">
+          <ul>
+            <li><a href="tel:80172910603">8 (017) 291-06-03</a></li>
+            <li><a href="tel:80172910605">8 (017) 291-06-05</a></li>
+            <li>Адрес: г.Минск ул. Бабушкина 54, к.205</li>
+            <li>Время работы: Пн-пт: 8-00 - 17-00, Сб, Вс:  выходной</li>
+            <li><a href="mailto:Amik@paket">E-mail: Amik@paket</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__wrapper">
+        <div class="header__middle">
+          <div class="container"><a class="logo"><img src="./img/logo.png" alt="logo"></a>
+            <div class="search__box">
+              <input type="search" id="search" placeholder="Поиск товара">
+              <button></button>
+            </div>
+            <div class="top_cart"><a href="#"><i class="fa fa_cart"></i><span class="count">0</span></a></div>
+          </div>
+        </div>
+        <div class="header__nav">
+          <div class="container">
+            <nav>
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Печать логотипов</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="burger"><span></span></div>
+            <button>Связаться</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="content">
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Бумажные стаканчики</a></li>
+            <li><a href="#">Стакан двухслойный 3D</a></li>
+          </ul>
+        </div>
+        <div class="product__wrapper">
+          <div class="image__box"><img src="./img/product__01.png" alt="Стаканчик бумажный одностойный, крафт">
+            <ul class="stock__list">
+              <li class="new">New</li>
+            </ul>
+          </div>
+          <div class="product__info">
+            <h1>Стаканчик бумажный одностойный, крафт</h1>
+            <ul class="price__product">
+              <li class="price"><span>2,55 BYN</span>/1000 шт</li>
+              <li class="old__price">3,40 руб</li>
+            </ul>
+            <div class="property">
+              <ul>
+                <li><span>Объём,</span> мл
+                  <ul class="volume_tabs">
+                    <li>100</li>
+                    <li>170</li>
+                    <li>195</li>
+                    <li>205</li>
+                    <li>250</li>
+                    <li>300</li>
+                    <li>400</li>
+                    <li>500</li>
+                  </ul>
+                </li>
+                <li><span>Артикул:</span>Стакан гофрированный, двухслойный</li>
+                <li><span>Размер:</span>d1- 80 х d2 - 56 х h - 92</li>
+                <li><span>Материал:</span>PAP+1PE</li>
+                <li><span>Плотность:</span>260+18PE 120/120  г/м2;</li>
+              </ul>
+            </div>
+            <div class="add_cart__box">
+              <div class="count_box"><span class="minus add-value"></span>
+                <input name="count" type="number" value="1" id="count"><span class="plus add-value"></span>
+              </div>
+              <ul class="count_pack">
+                <li>Количество в коробке: <span>500 шт</span></li>
+                <li>Количество в упаковке: <span>25 шт</span></li>
+              </ul>
+              <div class="cart_btn">
+                <button class="order__btn" value="cart/add" type="submit">Заказать</button>
+                <button class="add_cart__btn" value="cart/add" type="submit">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="related__wrapper">
+          <h2>Сопутствующие товары<span>Сопутствующие</span></h2>
+          <div class="related__items">
+            <div class="related__item">
+              <div class="image__box"><img src="./img/related_01.png" alt="Крышка для бумажных стаканов черная">
+                <ul class="stock__list">
+                  <li class="sale">Sale</li>
+                  <li class="new">New</li>
+                </ul>
+              </div><a class="title" href="#">Крышка для бумажных стаканов черная</a>
+              <ul class="price__item">
+                <li class="old__price">3,40 руб</li>
+                <li class="price"><span>от 2,55 BYN</span>/1000 шт</li>
+              </ul>
+              <button class="add__cart">Купить</button>
+            </div>
+            <div class="related__item">
+              <div class="image__box"><img src="./img/related_02.png" alt="Размешиватель для кофе пластмассовый"></div><a class="title" href="#">Размешиватель для кофе пластмассовый</a>
+              <ul class="price__item">
+                <li class="old__price">3,40 руб</li>
+                <li class="price"><span>от 2,55 BYN</span>/1000 шт</li>
+              </ul>
+              <button class="add__cart">Купить</button>
+            </div>
+            <div class="related__item">
+              <div class="image__box"><img src="./img/related_03.png" alt="Размешиватель для кофе деревянный"></div><a class="title" href="#">Размешиватель для кофе деревянный</a>
+              <ul class="price__item">
+                <li class="old__price">3,40 руб</li>
+                <li class="price"><span>от 2,55 BYN</span>/1000 шт</li>
+              </ul>
+              <button class="add__cart">Купить</button>
+            </div>
+            <div class="related__item">
+              <div class="image__box"><img src="./img/related_04.png" alt="Бумажные салфетки"></div><a class="title" href="#">Бумажные салфетки</a>
+              <ul class="price__item">
+                <li class="old__price">3,40 руб</li>
+                <li class="price"><span>от 2,55 BYN</span>/1000 шт</li>
+              </ul>
+              <button class="add__cart">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <ul class="contact">
+          <li>
+            <p class="title">Телефоны</p>
+            <ul>
+              <li><a href="tel:80172910603">8 (017) 291-06-03</a></li>
+              <li><a href="tel:80172910605">8 (017) 291-06-05</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="title">Факс</p>
+            <ul>
+              <li><a href="tel:80172910602">8 (017) 291-06-02</a></li>
+              <li><a href="tel:80172910604">8 (017) 291-06-04</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="title">E-mail</p>
+            <ul>
+              <li><a href="mailto:amik@paket.by">amik@paket.by</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer__catalog">
+          <p class="title">Каталог</p>
+          <ul>
+            <li><a href="#">Стаканы</a></li>
+            <li><a href="#">Крышки</a></li>
+            <li><a href="#">Упаковка</a></li>
+            <li><a href="#">Контейнеры</a></li>
+            <li><a href="#">Креманки</a></li>
+            <li><a href="#">Посуда</a></li>
+            <li><a href="#">Дополнительный ассортимент</a></li>
+            <li><a href="#">Упаковочная бумага</a></li>
+            <li><a href="#">Акции</a></li>
+          </ul>
+        </div>
+        <ul class="adress">
+          <li>
+            <p class="title">Время работы</p>
+            <p>Время работы: Пн-пт: 8-00 - 17-00, Сб, Вс:  выходной</p>
+          </li>
+          <li>
+            <p class="title">Адрес</p>
+            <p>220024, г.Минск ул. Бабушкина 54, к.205</p>
+            <p>ООО «Амик-О»<br>Юр. адрес: 220012, РБ, г. Минск, ул. Сурганова, д.27, оф.33<br>В торговом реестре РБ с 6 февраля 2017 года №366910<br>УНП: 192743895<br>Выдано Минским Городским исполнительным комитетом 06.12.2016 г.</p>
+          </li>
+          <li>
+            <ul class="pay_systems">
+              <li><img src="./img/visa.png" alt="visa"></li>
+              <li><img src="./img/master_card.png" alt="master card"></li>
+              <li><img src="./img/belkart.png" alt="belkart"></li>
+              <li><img src="./img/easy_pay.png" alt="easy pay"></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <ul>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Печать логотипов</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/common.js"></script>
+  </body>
+</html>
