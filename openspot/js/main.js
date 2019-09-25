@@ -215,28 +215,16 @@ if ($(window).width() < 992) {
 let formInput = document.querySelectorAll('.feedback input'),
     btnSubmit = document.querySelector('.feedback input.submit');
 
-if ($('body').has(btnSubmit)) {
-    btnSubmit.click(function (e) {
-        e.preventDefault();
-        for (let i = 0; i < formInput.length; i++) {
-            if (formInput[i].value === '') {
-                formInput[i].classList.add('error')
-            } else {
-                formInput[i].classList.remove('error')
-            }
+btnSubmit.addEventListener('click', function (e) {
+    e.preventDefault();
+    for (let i = 0; i < formInput.length; i++) {
+        if (formInput[i].value === '') {
+            formInput[i].classList.add('error')
+        } else {
+            formInput[i].classList.remove('error')
         }
-    });
-    // btnSubmit.addEventListener('click', function (e) {
-    //     e.preventDefault();
-    //     for (let i = 0; i < formInput.length; i++) {
-    //         if (formInput[i].value === '') {
-    //             formInput[i].classList.add('error')
-    //         } else {
-    //             formInput[i].classList.remove('error')
-    //         }
-    //     }
-    // });
-}
+    }
+});
 
 for (let i = 0; i < formInput.length; i++) {
     formInput[i].addEventListener('focus', function () {
