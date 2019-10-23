@@ -1,322 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="./css/normalize.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
+    <title>Portfolio | Irina Petrushenko</title>
+    <meta name="description" content="Portfolio | Irina Petrushenko">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="logo"><a href="https://irina-aninger.github.io/portfolio/"><span>I</span>rina<br><span>P</span>etrushenko</a></div>
-        <nav>
-          <ul>
-            <li><a href="#front_banner">Home</a></li>
-            <li><a href="#work_box">My works</a></li>
-            <li><a href="#skills_box">About me</a></li>
-            <!--li: a(href='#contact') Contact-->
-          </ul>
-        </nav>
+    <header class="header">
+      <div class="header-wrapper container"><a class="logo capital" href="#banner-section">Irina Petrushenko</a>
+        <div class="burger"><span></span></div>
+        <nav><a class="nav-item yellow" href="#work-section">work</a><a class="nav-item yellow" href="#experience-section">experience</a><a class="nav-item yellow" href="#skills-section">skills</a><a class="nav-item yellow" href="#contact-section">contacts</a></nav>
       </div>
     </header>
-    <section id="front_banner">
-      <div class="img_box">
-        <div class="txt_block">
-          <div class="container">
-            <h1>I'm Junior Front-end Developer</h1>
+    <div id="banner-section">
+      <ul class="social">
+        <li class="social__item"><a href="https://www.linkedin.com/in/irina-petrushenko/"><img src="./img/in.svg" alt="in"></a></li>
+        <li class="social__item"><a href="https://github.com/irina-aninger"><img src="./img/github.svg" alt="github"></a></li>
+        <li class="social__item"><a href="https://join.skype.com/invite/meT0coPZtPsY"><img src="./img/skype.svg" alt="skype"></a></li>
+        <li class="social__item"><a href="https://vk.com/id70846306"><img src="./img/vk.svg" alt="vk"></a></li>
+      </ul>
+      <div class="container flex_col">
+        <div class="banner__content">
+          <div class="banner__item_vertical">
+            <div><span class="capital">HELLO</span><span class="capital yellow">!</span></div>
           </div>
-        </div>
+          <div class="banner__item_horizontal"><span>My Name’s</span><span class="capital yellow">Irina Petrushenko</span>
+            <hr><span>and I’m junior front-end developer</span>
+          </div>
+        </div><a class="banner__btn capital" href="#work-section">go down</a>
       </div>
-    </section>
-    <section id="work_box">
-      <div class="container">
-        <h2 class="right">My Works</h2>
-        <div class="works_items">
-          <div class="work_item" data-name="co-working"><img src="./img/work/1.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Co-working</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://irina-aninger.github.io/together/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="kinopoisk"><img src="./img/work/2.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Kinopoisk</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://irina-aninger.github.io/movies/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="garantiruem"><img src="./img/work/3.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Garantiruem</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://garantiruem.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="gradient"><img src="./img/work/4.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Gradient</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://www.gradient.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="ecosoft"><img src="./img/work/15.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Ecosoft</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://ecosoft.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="anbosta"><img src="./img/work/32.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Anbosta</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://www.anbosta.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="florita"><img src="./img/work/18.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Florita</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://florita.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="inoxtrade"><img src="./img/work/34.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Inoxtrade</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://inoxtrade.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="transfer-minsk"><img src="./img/work/22.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Transfer Minsk</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://transfer-minsk.com/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="ecodar"><img src="./img/work/16.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Ecodar</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://ecodar.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="eurokupe"><img src="./img/work/6.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Eurokupe</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="http://eurokupe.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="gold"><img src="./img/work/20.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Золотая подкова</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://xn--80aafhnuexbbci1b1n.xn--90ais/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="wealth"><img src="./img/work/21.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Wealth</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://wealth.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="belkontplus"><img src="./img/work/5.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Belkontplus</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="http://www.belkontplus.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="20dc"><img src="./img/work/8.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">20dc</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://20dc.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="elegiadent"><img src="./img/work/17.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Elegiadent</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://elegiadent.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="rcompany"><img src="./img/work/24.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Rcompany</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://rcompany.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="hmelnov"><img src="./img/work/33.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Hmelnov</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="https://hmelnov.by/rating/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="homsair"><img src="./img/work/31.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Homsair</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="http://homsair.vldpl.me/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <div class="work_item" data-name="ph2"><img src="./img/work/35.jpg" alt="image">
-            <div class="hidden_desc">
-              <p class="title">Ph2</p>
-              <div class="links"><a class="more" href="#work_item__pop-up">More</a><a href="http://ph2.pwd.by/" target="_blank">Go to</a></div>
-            </div>
-          </div>
-          <button id="more_items"></button>
-        </div>
+    </div>
+    <div class="container" id="work-section">
+      <div class="title-wrapper">
+        <div class="title">work</div>
       </div>
-    </section>
-    <section id="skills_box">
-      <div class="container">
-        <h2 class="left">About Me</h2>
-        <div class="experience_wrapper">
-          <h3>Work Experience</h3>
-          <div class="experience_item">
-            <p class="title">HTML/CSS/JQuery-coder</p>
-            <div class="desc">
-              <h4>Seologic</h4>
-              <p>April 2018 - August 2019</p>
-              <ul>
-                <li>Layout of individual elements of websites</li>
-                <li>SEO markup on websites</li>
-                <li>Working with templates in Photoshop and Figma</li>
-                <li>Independent design development of elements</li>
-                <li>Work with an outsourcing company (in particular with <a href="https://www.ingate.ru/" target='_blank'>Ingate</a>)</li>
-              </ul>
-            </div>
-            <div class="text_about">
-              <h3>About Me</h3>
-              <p>My name is Irina. I'm a beginning Front-end Developer.</p>
-              <p>I started my way in this field with self-study of HTML and CSS. After some time, the company Seologic took me in his team. Then I continued to develop my skills on real projects.</p>
-              <p>At the moment I have such skills as:</p>
-              <ul>
-                <li>HTML5, CSS3, JQuery</li>
-                <li>Experience of JavaScript</li>
-                <li>English language skills at the level of correspondence</li>
-                <li>Customer communication experience</li>
-                <li>Work with many CMS (including self-written CMS)</li>
-                <ul class="tags">
-                  <li>Bitrix</li>
-                  <li>ModX</li>
-                  <li>Joomla</li>
-                  <li>WordPress</li>
-                  <li>Drupal</li>
-                  <li>Simpla</li>
-                  <li>OpenCart</li>
-                  <li>Netcat</li>
-                  <li>PrestaShop</li>
-                  <li>django CMS</li>
-                </ul>
-              </ul>
-            </div>
+      <div class="works-wrapper">
+        <div class="works" id="works-1">
+          <div class="works__item" style="background-image: url(&quot;./img/works/25.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://github.com/irina-aninger/food2fork" target="_blank">FoodFork</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/24.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://irina-aninger.github.io/drumasters/" target="_blank">Drumasters</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/23.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://irina-aninger.github.io/amiko-full/" target="_blank">Amiko</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/22.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="http://openspot.by/" target="_blank">Openspot</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/2.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://irina-aninger.github.io/movies/" target="_blank">Kinopoisk</a></div>
           </div>
         </div>
-        <div class="skills_wrapper">
-          <h3>Software Skills</h3>
-          <ul class="skills_item">
-            <li id="photoshop">
-              <p class="title">Photoshop</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="figma">
-              <p class="title">Figma</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="illustrator">
-              <p class="title">Illustrator</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-          </ul>
-          <h3>Technical Skills</h3>
-          <ul class="skills_item">
-            <li id="html">
-              <p class="title">HTML</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="css">
-              <p class="title">CSS / SCSS / SASS / LESS</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="js">
-              <p class="title">JavaScript</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="php">
-              <p class="title">PHP</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="pug">
-              <p class="title">Pug</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="gulp">
-              <p class="title">Gulp</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="git">
-              <p class="title">Git</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-          </ul>
-          <h3>Languages</h3>
-          <ul class="skills_item">
-            <li id="english">
-              <p class="title">English</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li id="deutsch">
-              <p class="title">Deutsch</p>
-              <div class="progress-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-          </ul>
+        <div class="works" id="works-2">
+          <div class="works__item" style="background-image: url(&quot;./img/works/1.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://irina-aninger.github.io/together/" target="_blank">Coworking</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/3.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://www.gradient.by/" target="_blank">Garantiruem</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/4.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://garantiruem.by/" target="_blank">Gradient</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/8.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://ecosoft.by/" target="_blank">Ecosoft</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/19.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://inoxtrade.by/" target="_blank">Inoxtrade</a></div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!--section#contact: .container-->
-    <!--    h2.right Contact-->
-    <!--    #feedback_form-->
-    <!--        form(action='#' method='post')-->
-    <!--            div-->
-    <!--                label(for='name') Name-->
-    <!--                input#name(type='text' name='name' value='')-->
-    <!--            div-->
-    <!--                label(for='email') Email-->
-    <!--                input#email(type='text' name='email' value='')-->
-    <!--            div-->
-    <!--                label(for='message') Message-->
-    <!--                textarea#message(name='message')-->
-    <!--            div-->
-    <!--                input#submit(type='submit' value='send')-->
-    <footer>
-      <div class="container">
-        <ul class="contact_info">
-          <li class="phone"><img src="./img/call.svg"><a href="tel:+375293816257">+375 (29) 381-62-57</a></li>
-          <li class="email"><img src="./img/email.svg"><a href="mailto:irina.aninger@gmail.com">irina.aninger@gmail.com</a></li>
-        </ul>
-        <ul class="soc_link">
-          <li><a href="https://vk.com/id70846306" target="_blank"><img src="./img/vk.svg"></a></li>
-          <li><a href="https://www.linkedin.com/in/irina-petrushenko/" target="_blank"><img src="./img/linkedin.svg"></a></li>
-          <li><a href="https://github.com/irina-aninger" target="_blank"><img src="./img/github.svg"></a></li>
-          <li><a href="https://join.skype.com/invite/meT0coPZtPsY" target="_blank"><img src="./img/skype.svg"></a></li>
+        <div class="works" id="works-3">
+          <div class="works__item" style="background-image: url(&quot;./img/works/17.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://www.anbosta.by/" target="_blank">Anbosta</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/11.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://florita.by/" target="_blank">Florita</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/14.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://transfer-minsk.com/" target="_blank">Transfer Minsk</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/13.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://wealth.by/" target="_blank">Wealth</a></div>
+          </div>
+          <div class="works__item" style="background-image: url(&quot;./img/works/21.jpg&quot;)">
+            <div class="hidden"><a class="flex_center yellow" href="https://garantiruem.by/" target="_blank">Homsair</a></div>
+          </div>
+        </div>
+        <ul class="works__nav flex_center">
+          <li data-work="works-1"><span></span></li>
+          <li data-work="works-2"><span></span></li>
+          <li data-work="works-3"><span></span></li>
         </ul>
       </div>
-    </footer>
-    <script src="./js/items.js"></script>
-    <script src="./js/common.js"></script>
+    </div>
+    <div id="experience-section">
+      <div class="title-wrapper">
+        <div class="container">
+          <div class="title">experience</div>
+        </div>
+      </div>
+      <div class="container experience-wrapper flex">
+        <div class="experience">
+          <div class="experience__title">HTML/CSS/JQuery-coder</div>
+          <div class="experience__descr descr">
+            <div class="descr__title">Seologic</div>
+            <div class="descr__date">April 2018 - August 2019</div>
+            <ul>
+              <li>Communicate with designers, backend team and project managers.</li>
+              <li>Create responsive layouts for a variety of mobile platforms and devices.</li>
+              <li>SEO markup on websites.</li>
+              <li>Working with templates in Photoshop and Figma.</li>
+              <li>Build reusable code for future use.</li>
+            </ul>
+          </div>
+        </div>
+        <ul class="cms">
+          <li>ModX</li>
+          <li>WordPress</li>
+          <li>Joomla</li>
+          <li>Drupal</li>
+          <li>Bitrix</li>
+          <li>Simpla</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" id="skills-section">
+      <div class="skills flex">
+        <div class="skills__item" id="tech">
+          <div class="skills__title">Technical</div>
+          <ul class="skills__list">
+            <li>
+              <p>JavaScript</p>
+              <div class="progress-bar" id="js">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>React</p>
+              <div class="progress-bar" id="react">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>HTML5</p>
+              <div class="progress-bar" id="html">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>CSS3 / SASS / LESS</p>
+              <div class="progress-bar" id="css">
+                <div class="bar"></div>
+              </div>
+            </li>
+          </ul>
+          <ul class="skills__list">
+            <li>
+              <p>Bootstrap</p>
+              <div class="progress-bar" id="bootstrap">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>Gulp</p>
+              <div class="progress-bar" id="gulp">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>Pug</p>
+              <div class="progress-bar" id="pug">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>Git</p>
+              <div class="progress-bar" id="git">
+                <div class="bar"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="skills__item" id="lang">
+          <div class="skills__title">Languages</div>
+          <ul class="skills__list">
+            <li>
+              <p>English</p>
+              <div class="progress-bar" id="eng">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>German</p>
+              <div class="progress-bar" id="germ">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>Russian</p>
+              <div class="progress-bar" id="rus">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li>
+              <p>Belorussian</p>
+              <div class="progress-bar" id="bel">
+                <div class="bar"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="title-wrapper">
+        <div class="title">skills</div>
+      </div>
+    </div>
+    <div id="contact-section">
+      <div class="container">
+        <div class="title-wrapper">
+          <div class="title">contacts</div>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="contact-img"></div>
+        <div class="contact flex">
+          <ul class="social">
+            <li class="social__item"><a href="https://www.linkedin.com/in/irina-petrushenko/"><img src="./img/in.svg" alt="in"></a></li>
+            <li class="social__item"><a href="https://github.com/irina-aninger"><img src="./img/github.svg" alt="github"></a></li>
+            <li class="social__item"><a href="https://join.skype.com/invite/meT0coPZtPsY"><img src="./img/skype.svg" alt="skype"></a></li>
+            <li class="social__item"><a href="https://vk.com/id70846306"><img src="./img/vk.svg" alt="vk"></a></li>
+          </ul>
+          <div class="contact__block">
+            <div class="contact__title capital">Irina Petrushenko</div>
+            <div class="contact__subtitle capital">junior front-end developer</div>
+            <hr>
+            <ul class="contact__list">
+              <li><a href="">+375 (29) 381-62-57</a></li>
+              <li><a href="">irina.aninger@gmail.com</a></li>
+            </ul>
+            <div class="cv capital"><a href="./cv.pdf" target="_blank">download<span> cv</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>
